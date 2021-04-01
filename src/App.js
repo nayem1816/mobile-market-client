@@ -8,6 +8,7 @@ import Login from "./components/Login/Login";
 import NotFound from "./components/NotFound/NotFound";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.min";
 import CheckOut from "./components/CheckOut/CheckOut";
 import OrderProcess from "./components/OrderProcess/OrderProcess";
 import { createContext, useState } from "react";

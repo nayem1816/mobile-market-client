@@ -12,6 +12,7 @@ const ManageProductDetails = (props) => {
     .then(res => res.json())
     .then(result =>{
         console.log('delete Successfully');
+        
     })
   };
   return (
@@ -21,11 +22,10 @@ const ManageProductDetails = (props) => {
         <td>{releaseYear}</td>
         <td>${price}</td>
         <td>
-          <button className="btn btn-success"><FontAwesomeIcon icon={faEdit} /></button>|
-          <button 
-            onClick={() => handelDeleteMobile(_id)}
-            className="btn btn-danger"
-          >
+          <button className="btn btn-success">
+            <FontAwesomeIcon icon={faEdit} />
+          </button>|
+          <button onClick={() => handelDeleteMobile(_id)} className="btn btn-danger">
             <FontAwesomeIcon icon={faTrash} />
           </button>
         </td>

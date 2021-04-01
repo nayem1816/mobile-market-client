@@ -44,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
   }
 }

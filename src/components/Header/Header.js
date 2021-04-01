@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { userContext } from "../../App";
+import '../../../node_modules/bootstrap/dist/js/bootstrap.min';
 import './Header.css'
 
 const Header = () => {

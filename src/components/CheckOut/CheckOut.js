@@ -1,5 +1,6 @@
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { data } from "jquery";
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -8,7 +9,9 @@ import { userContext } from "../../App";
 const CheckOut = () => {
   const [loggedInUser] = useContext(userContext);
   const { id } = useParams();
-  const [mobileData, setMobileData] = useState({});
+  const [mobileData, setMobileData] = useState({
+    newId: data._id
+  });
 
     let date_ob = new Date();
     let date = ("0" + date_ob.getDate()).slice(-2);
@@ -19,6 +22,12 @@ const CheckOut = () => {
     let ampm = hours >= 12 ? 'PM' : 'AM';
     const dateAndTime = (year + "-" + month + "-" + date + " " + hours + ":" + minutes + " " + ampm );
 
+    const newId = Date.now()
+    // console.log(newId);
+
+    const {name, price} = mobileData;
+    // console.log(parseInt(_id));
+
   useEffect(() => {
     fetch(`https://pumpkin-crisp-19586.herokuapp.com/mobile/${id}`)
       .then((res) => res.json())
@@ -27,7 +36,7 @@ const CheckOut = () => {
 
 
   const handelCheckout = () => {
-    const newOrder = {...loggedInUser, dateAndTime, ...mobileData};
+    const newOrder = {...loggedInUser, dateAndTime, newId, name, price };
     fetch('https://pumpkin-crisp-19586.herokuapp.com/addOrder', {
       method: "POST",
       headers: {
