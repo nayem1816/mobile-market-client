@@ -1,0 +1,18 @@
+.left-menu h3{
+    margin:50px 10px;
+    cursor: pointer;
+    padding: 20px;
+}
+.left-menu h3:hover{
+    background-color: #3c756a;
+    border-radius: 10px;
+}
+.left-menu-full{
+    padding-top: 40px;
+    background-color: #203D37;
+    color:white;
+    height: 100vh;
+}
+.admin-title hr{
+    background-color: white;
+}
