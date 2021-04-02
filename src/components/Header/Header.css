@@ -6,3 +6,7 @@
     height: 80px;
     background-color:#5580E9;
 }
+.mobile-menu-style{
+    background-color: #5580E9;
+    z-index: 10;
+}

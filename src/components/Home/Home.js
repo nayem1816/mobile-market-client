@@ -21,7 +21,7 @@ const Home = () => {
           <button className="btn btn-outline-secondary">Search</button>
         </div>
         {mobiles.length === 0 && (
-          <div className="mx-auto">
+          <div className="d-flex justify-content-center">
             <div
               className="spinner-border text-primary"
               style={{ width: "3rem", height: "3rem" }}
