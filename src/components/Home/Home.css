@@ -4,3 +4,8 @@
 .search-input{
     width: 50%;
 }
+.full-body{
+    /* background-color: #F9ECEC; */
+    padding: 0 10px;
+    height: 100%;
+}

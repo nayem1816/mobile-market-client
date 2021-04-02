@@ -10,11 +10,11 @@ const ManageProduct = () => {
       .then((data) => setMobiles(data));
   }, []);
   return (
-    <div>
+    <div className="full-manage-product-body">
       <h2 className="manage-product-heading">Manage Product</h2>
       <div className="">
         <div className="px-5">
-          <table className="table">
+          <table className="table table-borderless">
             <thead>
               <tr>
                 <th scope="col">Product Name</th>

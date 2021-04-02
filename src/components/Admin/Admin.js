@@ -26,7 +26,7 @@ const Admin = () => {
     setDisplay3(true);
   };
   return (
-    <div className="mt-2 px-4">
+    <div className="px-3">
       <div className="row">
         <div className="col-4 left-menu-full d-flex justify-content-center">
           <div className="">
@@ -41,7 +41,7 @@ const Admin = () => {
             </div>
           </div>
         </div>
-        <div className="col-8 p-0">
+        <div className="col-8 p-0 right-part">
           {display1 ? (
             <div className="">
               <ManageProduct></ManageProduct>

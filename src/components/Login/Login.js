@@ -38,8 +38,8 @@ const Login = () => {
   return (
     <div className="mt-5" style={{ textAlign: "center" }}>
       <h1>Sign In</h1>
-      <button onClick={handelLoginBtn} style={{fontSize:'30px', padding:'10px'}} className="btn btn-primary mt-5">
-      <FontAwesomeIcon icon={faGoogle} /> Continue with Google
+      <button onClick={handelLoginBtn} style={{fontSize:'30px', padding:'10px', fontWeight:'600'}} className="btn btn-outline-dark mt-5 px-4">
+      <FontAwesomeIcon className="mr-3" icon={faGoogle} /> Continue with Google
       </button>
     </div>
   );

@@ -1,23 +1,24 @@
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 
 const ManageProductDetails = (props) => {
+  const [display, setDisplay] = useState({display:''})
   const { name, releaseYear, price, _id } = props.mobile;
   const handelDeleteMobile = (id) => {
-    console.log();
     fetch("https://pumpkin-crisp-19586.herokuapp.com/delete/"+id, {
         method: "DELETE"
     })
     .then(res => res.json())
     .then(result =>{
         console.log('delete Successfully');
-        
     })
+    const hide = {display:'none'}
+    setDisplay(hide);
   };
   return (
     <tbody>
-      <tr>
+      <tr style={display}>
         <td>{name}</td>
         <td>{releaseYear}</td>
         <td>${price}</td>

@@ -74,7 +74,7 @@ const AddProduct = () => {
               </div>
             </div>
             <div className="d-flex justify-content-center mt-3">
-              <input className="btn btn-success" type="submit" value="Save" />
+              <input className="btn add-btn-style px-5" type="submit" value="Add" />
             </div>
           </form>
         </div>

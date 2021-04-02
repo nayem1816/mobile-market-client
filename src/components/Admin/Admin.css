@@ -9,10 +9,14 @@
 }
 .left-menu-full{
     padding-top: 40px;
-    background-color: #203D37;
-    color:white;
-    height: 100vh;
+    background-color: #84CEEB;
+    color:black;
+    min-height: 100vh;
 }
 .admin-title hr{
     background-color: white;
+}
+.right-part{
+    min-height: 100%;
+    background-color: #F9ECEC;
 }
