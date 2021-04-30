@@ -1,14 +1,7 @@
-# Assignment-10
-# Assignment Name: Mobile Market
-# Assignment Live Project Link: 
-    * https://mobile-market-6567c.web.app/
-
-# Assignment Client site Code Link: 
-    * https://github.com/Porgramming-Hero-web-course/full-stack-client-nayem1816
-
-# Assignment Server site Code Link: 
-    * https://github.com/Porgramming-Hero-web-course/full-stack-server-nayem1816
-
+# Project Name: Mobile Market
+# Project Live Project Link: https://mobile-market-6567c.web.app/
+# Assignment Client site Code Link: https://github.com/nayem1816/mobile-market-client
+# Assignment Server site Code Link: https://github.com/nayem1816/mobile-market-server
 # Assignment Api Link: 
     1. https://pumpkin-crisp-19586.herokuapp.com/
     2. https://pumpkin-crisp-19586.herokuapp.com/mobiles
